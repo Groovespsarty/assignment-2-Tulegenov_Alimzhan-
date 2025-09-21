@@ -1,0 +1,106 @@
+:root {
+  --serif: "Merriweather", serif;
+  --sans: "Roboto", sans-serif;
+}
+
+/* базовые стили */
+body {
+  margin: 0;
+  font-family: var(--sans);
+  background: linear-gradient(180deg, #f7f9ff 0%, #eef2fb 100%);
+  color: #222;
+  line-height: 1.6;
+}
+
+/* header */
+.site-header {
+  background: #102bae;
+  color: #fff;
+  text-align: center;
+  padding: 30px 15px;
+}
+.site-header h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 2.5rem;
+}
+
+/* content container */
+.content {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 1fr 320px; /* main sections | sidebar */
+  gap: 20px;
+}
+
+/* sections */
+.content section {
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(16, 42, 174, 0.06);
+}
+
+/* aside (portrait and links) */
+.portrait {
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(16, 42, 174, 0.06);
+}
+.portrait img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+  display: block;
+  margin: 0 auto 12px;
+}
+
+/* headings */
+h2 { font-family: var(--serif); margin-top: 0; }
+h3 { color: #666; font-weight: 400; }
+
+/* lists */
+ol, ul { padding-left: 1.2em; margin-top: 0; }
+ul { list-style-type: square; }
+
+/* links */
+a { color: #102bae; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* button */
+.btn {
+  display: inline-block;
+  background: #102bae;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(16,42,174,0.18);
+}
+
+/* footer */
+.site-footer {
+  text-align: center;
+  padding: 18px;
+  color: #fff;
+  background: #111;
+  margin-top: 30px;
+}
+
+/* responsive */
+@media (max-width: 720px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .portrait { order: -1; } /* фото сверху на мобильных */
+}

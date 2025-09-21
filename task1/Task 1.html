@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Portal</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: black; 
+      color: #fff;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .header {
+      background: #ff4757;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    
+    .navbar {
+      background: #2f3542;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .navbar a {
+      display: inline-block;
+      color: #fff;
+      padding: 12px 18px;
+      margin: 0 5px;
+      text-decoration: none;
+      background: #57606f;
+      border-radius: 8px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      background: #ffa502;
+      color: black;
+    }
+
+  
+    .content {
+      flex: 1;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 25%;
+      background: #1e272e;
+      padding: 20px;
+      border-right: 2px solid #444;
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+      color: #ffa502;
+    }
+
+    .sidebar a {
+      color: #ffa502;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    .main {
+      width: 75%;
+      padding: 20px;
+      background: #2f3640;
+      border-left: 2px solid #444;
+    }
+
+    .main h2 {
+      color: #ffa502;
+    }
+
+
+    .footer {
+      background: #2f3542;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">🎮 Game Portal</div>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">New Games</a>
+    <a href="#">Top Rated</a>
+    <a href="#">Categories</a>
+  </div>
+
+  <div class="content">
+    <div class="sidebar">
+      <h3>Popular Games</h3>
+      <ul>
+        <li><a href="#">Pac-Man</a></li>
+        <li><a href="#">Tetris</a></li>
+        <li><a href="#">Snake</a></li>
+        <li><a href="#">Space Invaders</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <h2>Welcome to the Game Portal!</h2>
+      <p>Here you can find the best browser games to play online for free. Choose your favorite category, compete with friends, and have fun without downloads!</p>
+      <p>New games are added every week — don’t miss out!</p>
+    </div>
+  </div>
+
+  <div class="footer">© 2025 My Website. All rights reserved.</div>
+</body>
+</html>
